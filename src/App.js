@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
+import "./App.css";
+
 const RegisterForm = () => {
   const {
     register,
@@ -24,7 +26,10 @@ const RegisterForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleRegistration, handleError)}>
+    <form
+      className="form-box"
+      onSubmit={handleSubmit(handleRegistration, handleError)}
+    >
       <div>
         <label>Name</label>
         <input
